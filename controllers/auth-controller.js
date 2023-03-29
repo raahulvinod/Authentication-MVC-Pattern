@@ -17,7 +17,7 @@ function getSignUp(req, res) {
       });
 }
 
-function getLogin() {
+function getLogin(req, res) {
     const sessionErrorData = validationSession.getSessionErrorData(req, {
         email: '',
         password: ''
